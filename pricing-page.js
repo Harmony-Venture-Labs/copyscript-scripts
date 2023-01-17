@@ -2,7 +2,7 @@
  * Created: Jan 17, 2023
  * 
  * This file contains helper scripts for the copysmith website
- * Script tag: <script src="https://raw.githubusercontent.com/Harmony-Venture-Labs/copyscript-scripts/main/pricing-page.js" type="text/javascript" />
+ * Script tag: <script src="https://raw.githubusercontent.com/Harmony-Venture-Labs/copyscript-scripts/main/pricing-page.js" type="text/javascript"></script>
  */
 
 const toggleBall = document.getElementById('toggle-ball');
@@ -33,19 +33,10 @@ customPricingSlider.onchange = (e) => {
 const yearlyMonthlyToggle = document.getElementById('toggle');
 
 yearlyMonthlyToggle.onchange = (e) => {
-  yearlyMonthlyToggle.onchange(e);
-  console.log(toggleBall?.innerText)
   if (!toggleBall) return;
   if (e.currentTarget.checked) {
     toggleBall.innerText = "Monthly";
     return;
   }
   toggleBall.innerText = "Yearly";
-}
-
-document.onload = (e) => {
-  const scr = document.createElement('script')
-  scr.src = "https://raw.githubusercontent.com/Harmony-Venture-Labs/copyscript-scripts/main/pricing-page.js";
-  scr.type = "text/javascript"
-  document.head.appendChild(scr)
 }
