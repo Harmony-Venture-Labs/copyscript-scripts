@@ -42,3 +42,10 @@ yearlyMonthlyToggle.onchange = (e) => {
   }
   toggleBall.innerText = "Yearly";
 }
+
+document.onload = (e) => {
+  const scr = document.createElement('script')
+  scr.src = "https://raw.githubusercontent.com/Harmony-Venture-Labs/copyscript-scripts/main/pricing-page.js";
+  scr.type = "text/javascript"
+  document.head.appendChild(scr)
+}
