@@ -40,3 +40,5 @@ yearlyMonthlyToggle.onchange = (e) => {
   }
   toggleBall.innerText = "Yearly";
 }
+
+console.log("imported")
