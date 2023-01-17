@@ -34,6 +34,7 @@ const yearlyMonthlyToggle = document.getElementById('toggle');
 
 yearlyMonthlyToggle.onchange = (e) => {
   yearlyMonthlyToggle.onchange(e);
+  console.log(toggleBall?.innerText)
   if (!toggleBall) return;
   if (e.currentTarget.checked) {
     toggleBall.innerText = "Monthly";
